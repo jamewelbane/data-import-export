@@ -1,7 +1,7 @@
 <?php
-require_once '../database/connection.php'; // Include your database connection file
+require_once '../database/connection.php';
 
-// Fetch data from the products table
+
 $query = "SELECT * FROM products";
 $result = mysqli_query($link, $query);
 
