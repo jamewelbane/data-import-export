@@ -18,7 +18,7 @@ if ($result) {
     echo "Error executing query: " . mysqli_error($link);
 }
 
-mysqli_close($link); 
+mysqli_close($link);
 
 ?>
 
@@ -29,6 +29,10 @@ mysqli_close($link);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Table</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- DataTables Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.11.5/datatables.min.css" />
 
 </head>
 
