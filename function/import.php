@@ -63,10 +63,10 @@ if (isset($_FILES['importFile'])) {
     } elseif ($fileType === 'xlsx' || $fileType === 'xls') {
         // Handle Excel file
         // Check if ZipArchive class exists
-        if (!class_exists('ZipArchive')) {
-            echo "Zip extension is not enabled or properly installed.";
-            exit; // Stop execution if Zip extension is not available
-        }
+        // if (!class_exists('ZipArchive')) {
+        //     echo "Zip extension is not enabled or properly installed.";
+        //     exit; // Stop execution if Zip extension is not available
+        // }
 
         require '../vendor/autoload.php';
         $reader = \PhpOffice\PhpSpreadsheet\IOFactory::createReaderForFile($file['tmp_name']);
